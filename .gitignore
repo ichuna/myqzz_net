@@ -9,6 +9,7 @@ Desktop.ini
 $RECYCLE.BIN/
 node_modules/
 public/
+.deploy_git
 
 # Windows Installer files
 *.cab
