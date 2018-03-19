@@ -7,40 +7,52 @@
   <title>thrift编译设置 | 小爱学习笔记</title>
   <meta name="keywords" content "undefined" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="thrift编译设置附加包含目录
-Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+  <meta name="description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
 Z:\libraries\boost\boost_1_66_0;
+
+
+
 预处理器定义
 HAVE_CONFIG_H=1
 WIN32
 _DEBUG
-_CONS">
+_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="thrift编译设置">
 <meta property="og:url" content="http://myqzz.net/2018/03/18/thrift/index.html">
 <meta property="og:site_name" content="小爱学习笔记">
-<meta property="og:description" content="thrift编译设置附加包含目录
-Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+<meta property="og:description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
 Z:\libraries\boost\boost_1_66_0;
+
+
+
 预处理器定义
 HAVE_CONFIG_H=1
 WIN32
 _DEBUG
-_CONS">
-<meta property="og:updated_time" content="2018-03-19T10:32:27.861Z">
+_">
+<meta property="og:updated_time" content="2018-03-19T23:58:41.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="thrift编译设置">
-<meta name="twitter:description" content="thrift编译设置附加包含目录
-Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+<meta name="twitter:description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
 Z:\libraries\boost\boost_1_66_0;
+
+
+
 预处理器定义
 HAVE_CONFIG_H=1
 WIN32
 _DEBUG
-_CONS">
+_">
   
     <link rel="alternative" href="/atom.xml" title="小爱学习笔记" type="application/atom+xml">
   
@@ -122,105 +134,125 @@ _CONS">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>thrift编译设置<br>附加包含目录</p>
-<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+        <h2 id="thrift编译设置"><a href="#thrift编译设置" class="headerlink" title="thrift编译设置"></a>thrift编译设置</h2><hr>
+<ul>
+<li>附加包含目录<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
 Z:\libraries\boost\boost_1_66_0;
-</code></pre><p>预处理器定义</p>
+</code></pre></li>
+</ul>
+<ul>
+<li><p>预处理器定义</p>
 <pre><code>HAVE_CONFIG_H=1
 WIN32
 _DEBUG
 _CONSOLE
-</code></pre><p>代码生成：</p>
+</code></pre></li>
+<li><p>代码生成：</p>
 <pre><code>DEBUG  运行库 MTD
 RELEASE 运行库 MT
-</code></pre><p>预编译头</p>
-<pre><code>不使用预编译头
-</code></pre><p>附加依赖项</p>
+</code></pre></li>
+</ul>
+<ul>
+<li>预编译头<pre><code>不使用预编译头
+</code></pre></li>
+</ul>
+<ul>
+<li><p>附加依赖项</p>
 <pre><code>libssl.lib
 libthrift.lib
 libcrypto.lib
-</code></pre><p>附加库目录</p>
+</code></pre></li>
+<li><p>附加库目录</p>
 <pre><code>Z:\libraries\boost\boost_1_66_0\stage\lib;
 z:\libraries\openssl\OpenSSL-Win32\lib;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;
-</code></pre><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：<br>    在stdafx.h中添加</p>
-<pre><code>#define WIN32_LEAN_AND_MEAN
-</code></pre><p>openssl 编译设置</p>
-<pre><code>动态编译
-
-    WIN64
-    perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
-    nmake clean
-    nmake 
-    nmake test
-    nmake install
-
-
-静态编译
-
-    makefile and configdata 两个文件中的/MD改为/MT
-    perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64_static
-    nmake clean
-    nmake
-    nmake test
-    nmake install
-</code></pre><p>thrift 0.11.0编译问题及解决：</p>
-<pre><code>一、包含目录要加上openssl的目录引用
-二、THttpserver.cpp与THttpclient.cpp中的
-    #include &lt;thrift/config.h&gt;改为
-    #include &lt;thrift/thrift.h&gt;
-三、在&lt;thrift/thrift-config.h&gt;中添加以下宏定义
-    #define PACKAGE_VERSION  &quot;${PACKAGE_VERSION}&quot;
-</code></pre><p>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</p>
-<pre><code>c++常规--附加包含目录：
-    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
-    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows
-    Z:\libraries\boost\boost_1_66_0
-链接器--常规--附加库目录
-    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\release-mt
-    Z:\libraries\boost\boost_1_66_0\stage\lib141
-    Z:\libraries\openssl\OpenSSL-Win32\lib
-链接器--输入--附加依赖项
-    libthrift.lib
-    libssl.lib
-    libcrypto.lib
-</code></pre><p>使用odb时自定义生成：</p>
-<pre><code>在项目中选中类文件如：employee.hxx  右键--属性--配置属性--常规--项类型 设置成：自定义生成工具
-</code></pre><p>然后选中：自定义生成工具并设置如下：</p>
-<pre><code>命令行：
-    odb.exe --std c++11 --database sqlite --generate-query --generate-schema --table-prefix boost_ employee.hxx
-
-说明：
-    odb employee.hxx
-
-输出：
-    employee-odb.hxx
-    employee-odb.ixx
-    employee-odb.cxx
-</code></pre><p>docker使用hexo</p>
-<p>Hexo使用：</p>
-<pre><code>2.1.安装Hexo
-    docker run --name hexo -it -p 8083:80 -v `pwd`: /usr/share/nginx/html/source simplyintricate/hexo
-
-3. 2. 发布一篇blog
-    docker exec -it hexo hexo new &quot;This is one post&quot;
-</code></pre><p>ODB项目设置：</p>
-<pre><code>输入
-    odb-sqlite.lib;odb.lib
-包含目录
-    z:\libraries\orm\sqlite3\sqlite-amalgamation-3220000;
-    z:\libraries\orm\odb2.4\libodb-2.4.0;
-    z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
-库目录
-    z:\libraries\orm\sqlite3\;
-</code></pre><p>使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。</p>
-
+</code></pre></li>
+</ul>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：</p>
+<ul>
+<li>在stdafx.h中添加<pre><code>#define WIN32_LEAN_AND_MEAN
+</code></pre></li>
+</ul>
+<h2 id="openssl-编译设置"><a href="#openssl-编译设置" class="headerlink" title="openssl 编译设置"></a>openssl 编译设置</h2><ul>
+<li>动态编译<pre><code>WIN64
+perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
+nmake clean
+nmake 
+nmake test
+nmake install
+</code></pre></li>
+</ul>
+<ul>
+<li>静态编译<pre><code>makefile and configdata 两个文件中的/MD改为/MT
+perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64_static
+nmake clean
+nmake
+nmake test
+nmake install
+</code></pre></li>
+</ul>
+<h2 id="thrift-0-11-0编译问题及解决："><a href="#thrift-0-11-0编译问题及解决：" class="headerlink" title="thrift 0.11.0编译问题及解决："></a>thrift 0.11.0编译问题及解决：</h2><ul>
+<li>一、包含目录要加上openssl的目录引用</li>
+<li>二、THttpserver.cpp与THttpclient.cpp中的<pre><code>#include &lt;thrift/config.h&gt;改为
+#include &lt;thrift/thrift.h&gt;
+</code></pre></li>
+<li>三、在<thrift thrift-config.h="">中添加以下宏定义<pre><code>#define PACKAGE_VERSION  &quot;${PACKAGE_VERSION}&quot;
+</code></pre></thrift></li>
+</ul>
+<h2 id="thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）"><a href="#thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）" class="headerlink" title="thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）"></a>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</h2><ul>
+<li>c++常规–附加包含目录：<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows
+Z:\libraries\boost\boost_1_66_0
+</code></pre></li>
+<li>链接器–常规–附加库目录<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\release-mt
+Z:\libraries\boost\boost_1_66_0\stage\lib141
+Z:\libraries\openssl\OpenSSL-Win32\lib
+</code></pre></li>
+<li>链接器–输入–附加依赖项<pre><code>libthrift.lib
+libssl.lib
+libcrypto.lib
+</code></pre></li>
+</ul>
+<h2 id="使用odb时自定义生成："><a href="#使用odb时自定义生成：" class="headerlink" title="使用odb时自定义生成："></a>使用odb时自定义生成：</h2><ul>
+<li><p>在项目中选中类文件如：employee.hxx  右键–属性–配置属性–常规–项类型 设置成：自定义生成工具</p>
+</li>
+<li><p>然后选中：自定义生成工具并设置如下：</p>
+<ul>
+<li>命令行：<pre><code>odb.exe --std c++11 --database sqlite --generate-query --generate-schema --table-prefix boost_ employee.hxx
+</code></pre></li>
+<li>说明：<pre><code>odb employee.hxx
+</code></pre></li>
+<li>输出：<pre><code>employee-odb.hxx
+employee-odb.ixx
+employee-odb.cxx
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="docker使用hexo"><a href="#docker使用hexo" class="headerlink" title="docker使用hexo"></a>docker使用hexo</h2><ul>
+<li>1.安装Hexo<pre><code>docker run --name hexo -it -p 8083:80 -v `pwd`: /usr/share/nginx/html/source simplyintricate/hexo
+</code></pre></li>
+<li>2.发布一篇blog<pre><code>docker exec -it hexo hexo new &quot;This is one post&quot;
+</code></pre></li>
+</ul>
+<h2 id="ODB项目设置："><a href="#ODB项目设置：" class="headerlink" title="ODB项目设置："></a>ODB项目设置：</h2><ul>
+<li>输入<pre><code>db-sqlite.lib;odb.lib
+</code></pre></li>
+<li>包含目录<pre><code>z:\libraries\orm\sqlite3\sqlite-amalgamation-3220000;
+z:\libraries\orm\odb2.4\libodb-2.4.0;
+z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
+</code></pre></li>
+<li>库目录<pre><code>z:\libraries\orm\sqlite3\;
+</code></pre></li>
+</ul>
+<h2 id="odb备注"><a href="#odb备注" class="headerlink" title="odb备注"></a>odb备注</h2><pre><code>使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。
+</code></pre>
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjey3cz910004g4jx4b9937j7" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjeyw2iyh00075gjx4z6j6nth" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
       
 
       
