@@ -116,7 +116,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/hello-world/" data-id="cjexm957z00032tjxvc6nstnj" class="article-share-link" data-share="baidu" data-title="如何同步Hexo网站到github">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/hello-world/" data-id="cjey3cz8y0003g4jx5qg5q43e" class="article-share-link" data-share="baidu" data-title="如何同步Hexo网站到github">Share</a>
       
 
       
@@ -151,51 +151,105 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>thrift编译设置</p>
-<p>附加包含目录<br>    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;<br>    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;<br>    Z:\libraries\boost\boost_1_66_0;</p>
-<p>预处理器定义<br>    HAVE_CONFIG_H=1<br>    WIN32<br>    _DEBUG<br>    _CONSOLE</p>
-<p>代码生成：<br>    DEBUG  运行库 MTD<br>    RELEASE 运行库 MT</p>
-<p>预编译头<br>    不使用预编译头</p>
-<p>附加依赖项<br>    libssl.lib<br>    libthrift.lib<br>    libcrypto.lib</p>
-<p>附加库目录<br>    Z:\libraries\boost\boost_1_66_0\stage\lib;<br>    z:\libraries\openssl\OpenSSL-Win32\lib;<br>    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;</p>
-<p>使用vs2017编译thrift项目时出现以下错误：<br>    objbase.h(230): error C2760错误的解决的解决办法：<br>    在stdafx.h中添加</p>
+        <p>thrift编译设置<br>附加包含目录</p>
+<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
+Z:\libraries\boost\boost_1_66_0;
+</code></pre><p>预处理器定义</p>
+<pre><code>HAVE_CONFIG_H=1
+WIN32
+_DEBUG
+_CONSOLE
+</code></pre><p>代码生成：</p>
+<pre><code>DEBUG  运行库 MTD
+RELEASE 运行库 MT
+</code></pre><p>预编译头</p>
+<pre><code>不使用预编译头
+</code></pre><p>附加依赖项</p>
+<pre><code>libssl.lib
+libthrift.lib
+libcrypto.lib
+</code></pre><p>附加库目录</p>
+<pre><code>Z:\libraries\boost\boost_1_66_0\stage\lib;
+z:\libraries\openssl\OpenSSL-Win32\lib;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;
+</code></pre><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：<br>    在stdafx.h中添加</p>
 <pre><code>#define WIN32_LEAN_AND_MEAN
-</code></pre><p>openssl 编译设置<br>    动态编译<br>        WIN64<br>        perl Configure VC-WIN64A no-asm –prefix=z:\libraries\openssl\vc-64<br>        nmake clean<br>        nmake<br>        nmake test<br>        nmake install</p>
-<pre><code>静态编译
+</code></pre><p>openssl 编译设置</p>
+<pre><code>动态编译
+
+    WIN64
+    perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
+    nmake clean
+    nmake 
+    nmake test
+    nmake install
+
+
+静态编译
+
     makefile and configdata 两个文件中的/MD改为/MT
     perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64_static
     nmake clean
     nmake
     nmake test
     nmake install
-</code></pre><p>thrift 0.11.0编译问题及解决：<br>    一、包含目录要加上openssl的目录引用<br>    二、THttpserver.cpp与THttpclient.cpp中的</p>
-<pre><code>    #include &lt;thrift/config.h&gt;改为
+</code></pre><p>thrift 0.11.0编译问题及解决：</p>
+<pre><code>一、包含目录要加上openssl的目录引用
+二、THttpserver.cpp与THttpclient.cpp中的
+    #include &lt;thrift/config.h&gt;改为
     #include &lt;thrift/thrift.h&gt;
 三、在&lt;thrift/thrift-config.h&gt;中添加以下宏定义
     #define PACKAGE_VERSION  &quot;${PACKAGE_VERSION}&quot;
-</code></pre><p>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）<br>    c++常规–附加包含目录：<br>        Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src<br>        Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows<br>        Z:\libraries\boost\boost_1_66_0<br>    链接器–常规–附加库目录<br>        Z:\libraries\thrift\thrift-0.11.0\lib\cpp\release-mt<br>        Z:\libraries\boost\boost_1_66_0\stage\lib141<br>        Z:\libraries\openssl\OpenSSL-Win32\lib<br>    链接器–输入–附加依赖项<br>        libthrift.lib<br>        libssl.lib<br>        libcrypto.lib</p>
-<p>使用odb时自定义生成：<br>在项目中选中类文件如：employee.hxx  右键–属性–配置属性–常规–项类型 设置成：自定义生成工具<br>然后选中：自定义生成工具并设置如下：<br>    命令行：<br>        odb.exe –std c++11 –database sqlite –generate-query –generate-schema –table-prefix boost_ employee.hxx<br>    说明：<br>        odb employee.hxx<br>    输出：<br>        employee-odb.hxx<br>        employee-odb.ixx<br>        employee-odb.cxx</p>
-<p>docker使用hexo</p>
-<p>Hexo使用：<br>1.安装Hexo<br>   docker run –name hexo -it -p 8083:80 -v <code>pwd</code>: /usr/share/nginx/html/source simplyintricate/hexo</p>
-<ol>
-<li>发布一篇blog<br>docker exec -it hexo hexo new “This is one post”</li>
-</ol>
-<p>ODB项目设置：</p>
+</code></pre><p>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</p>
+<pre><code>c++常规--附加包含目录：
+    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
+    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows
+    Z:\libraries\boost\boost_1_66_0
+链接器--常规--附加库目录
+    Z:\libraries\thrift\thrift-0.11.0\lib\cpp\release-mt
+    Z:\libraries\boost\boost_1_66_0\stage\lib141
+    Z:\libraries\openssl\OpenSSL-Win32\lib
+链接器--输入--附加依赖项
+    libthrift.lib
+    libssl.lib
+    libcrypto.lib
+</code></pre><p>使用odb时自定义生成：</p>
+<pre><code>在项目中选中类文件如：employee.hxx  右键--属性--配置属性--常规--项类型 设置成：自定义生成工具
+</code></pre><p>然后选中：自定义生成工具并设置如下：</p>
+<pre><code>命令行：
+    odb.exe --std c++11 --database sqlite --generate-query --generate-schema --table-prefix boost_ employee.hxx
+
+说明：
+    odb employee.hxx
+
+输出：
+    employee-odb.hxx
+    employee-odb.ixx
+    employee-odb.cxx
+</code></pre><p>docker使用hexo</p>
+<p>Hexo使用：</p>
+<pre><code>2.1.安装Hexo
+    docker run --name hexo -it -p 8083:80 -v `pwd`: /usr/share/nginx/html/source simplyintricate/hexo
+
+3. 2. 发布一篇blog
+    docker exec -it hexo hexo new &quot;This is one post&quot;
+</code></pre><p>ODB项目设置：</p>
 <pre><code>输入
     odb-sqlite.lib;odb.lib
-
 包含目录
-    z:\libraries\orm\sqlite3\sqlite-amalgamation-3220000;z:\libraries\orm\odb2.4\libodb-2.4.0;z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
+    z:\libraries\orm\sqlite3\sqlite-amalgamation-3220000;
+    z:\libraries\orm\odb2.4\libodb-2.4.0;
+    z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
 库目录
     z:\libraries\orm\sqlite3\;
+</code></pre><p>使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。</p>
 
-    使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。
-</code></pre>
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjexm958200052tjx3gv1ytm0" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjey3cz910004g4jx4b9937j7" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
       
 
       
@@ -294,7 +348,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/12/09/Meteor-2/" data-id="cjexm958k00082tjxf58z5y54" class="article-share-link" data-share="baidu" data-title="项目">Share</a>
+        <a data-url="http://myqzz.net/2016/12/09/Meteor-2/" data-id="cjey3cz9k0007g4jx81flnojt" class="article-share-link" data-share="baidu" data-title="项目">Share</a>
       
 
       
@@ -371,7 +425,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/29/Meteor-1/" data-id="cjexm957p00002tjx5alk54vm" class="article-share-link" data-share="baidu" data-title="Meteor入门">Share</a>
+        <a data-url="http://myqzz.net/2016/09/29/Meteor-1/" data-id="cjey3cz8o0000g4jx8m2bjelf" class="article-share-link" data-share="baidu" data-title="Meteor入门">Share</a>
       
 
       
@@ -410,7 +464,7 @@
       
         <h2 id="三支部6月“支部主题党日”活动记录"><a href="#三支部6月“支部主题党日”活动记录" class="headerlink" title="三支部6月“支部主题党日”活动记录"></a>三支部6月“支部主题党日”活动记录</h2><ul>
 <li>时间：2016.6.6          地点：三楼会议室</li>
-<li>主题：学习营改增政策</li>
+<li>主题：学习营改增政策xx</li>
 <li>主持人：汪鹏             </li>
 </ul>
 <h3 id="记录："><a href="#记录：" class="headerlink" title="记录："></a>记录：</h3><p>为认真贯彻落实上级党组织“两学一做”学习教育要求，根据局党委对“支部主题党日”活动的统筹部署，我支部今天组织全体党员在三楼会议室开展“主题党日”活动，就是希望通过活动进一步坚定支部全体党员干部的理想信念，增强党性观念，提升党性修养，充分发挥我们党员干部在学习教育中学在先、走在前的示范带头作用。今天的“支部主题党日”活动主要有八项议程，下面依次进行：</p>
@@ -454,7 +508,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/19/note1/" data-id="cjexm958400072tjxgxr58ohv" class="article-share-link" data-share="baidu" data-title="三支部活动记录">Share</a>
+        <a data-url="http://myqzz.net/2016/09/19/note1/" data-id="cjey3cz9l0008g4jxq2clkob5" class="article-share-link" data-share="baidu" data-title="三支部活动记录">Share</a>
       
 
       
@@ -693,7 +747,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/19/note/" data-id="cjexm958100042tjxngmeaijq" class="article-share-link" data-share="baidu" data-title="三支部三会一课笔记（支委版）">Share</a>
+        <a data-url="http://myqzz.net/2016/09/19/note/" data-id="cjey3cz930005g4jx5cj8vqkz" class="article-share-link" data-share="baidu" data-title="三支部三会一课笔记（支委版）">Share</a>
       
 
       
@@ -733,7 +787,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/08/26/install-hexo/" data-id="cjexm957u00012tjx8k2adecb" class="article-share-link" data-share="baidu" data-title="install_hexo">Share</a>
+        <a data-url="http://myqzz.net/2016/08/26/install-hexo/" data-id="cjey3cz8t0001g4jxwc89a60j" class="article-share-link" data-share="baidu" data-title="install_hexo">Share</a>
       
 
       
