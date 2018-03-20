@@ -1,7 +1,7 @@
 ---
 title: thrift编译设置
 date: 2018-03-18 18:54:59
-tags:
+tags: visual studio 2017编译thrift0.11与libodb 2.4 
 ---
 
 
@@ -46,9 +46,10 @@ tags:
 ## 错误处理
 
 使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：
-
-* 在stdafx.h中添加
-		#define WIN32_LEAN_AND_MEAN
+~~~cpp
+#在stdafx.h中添加
+#define WIN32_LEAN_AND_MEAN
+~~~
 
 
 
@@ -58,7 +59,7 @@ tags:
 		WIN64
 		perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
 		nmake clean
-		nmake 
+		nmake
 		nmake test
 		nmake install
 
@@ -77,10 +78,16 @@ tags:
 
 * 一、包含目录要加上openssl的目录引用
 * 二、THttpserver.cpp与THttpclient.cpp中的
-		#include <thrift/config.h>改为
-		#include <thrift/thrift.h>
-* 三、在<thrift/thrift-config.h>中添加以下宏定义
-		#define PACKAGE_VERSION  "${PACKAGE_VERSION}"
+~~~cpp
+//#include <thrift/config.h>此行改为
+#include <thrift/thrift.h>
+~~~
+
+* 三、添加以下宏定义
+~~~cpp
+//在<thrift/thrift-config.h>中
+#define PACKAGE_VERSION  "${PACKAGE_VERSION}"
+~~~
 
 
 
