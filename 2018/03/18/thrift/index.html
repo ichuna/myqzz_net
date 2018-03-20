@@ -37,7 +37,7 @@ HAVE_CONFIG_H=1
 WIN32
 _DEBUG
 _">
-<meta property="og:updated_time" content="2018-03-19T23:58:41.829Z">
+<meta property="og:updated_time" content="2018-03-20T03:12:03.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="thrift编译设置">
 <meta name="twitter:description" content="thrift编译设置
@@ -169,16 +169,12 @@ z:\libraries\openssl\OpenSSL-Win32\lib;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;
 </code></pre></li>
 </ul>
-<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：</p>
-<ul>
-<li>在stdafx.h中添加<pre><code>#define WIN32_LEAN_AND_MEAN
-</code></pre></li>
-</ul>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#在stdafx.h中添加</div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> WIN32_LEAN_AND_MEAN</span></div></pre></td></tr></table></figure></p>
 <h2 id="openssl-编译设置"><a href="#openssl-编译设置" class="headerlink" title="openssl 编译设置"></a>openssl 编译设置</h2><ul>
 <li>动态编译<pre><code>WIN64
 perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
 nmake clean
-nmake 
+nmake
 nmake test
 nmake install
 </code></pre></li>
@@ -194,11 +190,12 @@ nmake install
 </ul>
 <h2 id="thrift-0-11-0编译问题及解决："><a href="#thrift-0-11-0编译问题及解决：" class="headerlink" title="thrift 0.11.0编译问题及解决："></a>thrift 0.11.0编译问题及解决：</h2><ul>
 <li>一、包含目录要加上openssl的目录引用</li>
-<li>二、THttpserver.cpp与THttpclient.cpp中的<pre><code>#include &lt;thrift/config.h&gt;改为
-#include &lt;thrift/thrift.h&gt;
-</code></pre></li>
-<li>三、在<thrift thrift-config.h="">中添加以下宏定义<pre><code>#define PACKAGE_VERSION  &quot;${PACKAGE_VERSION}&quot;
-</code></pre></thrift></li>
+<li><p>二、THttpserver.cpp与THttpclient.cpp中的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//#include &lt;thrift/config.h&gt;此行改为</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thrift/thrift.h&gt;</span></span></div></pre></td></tr></table></figure>
+</li>
+<li><p>三、添加以下宏定义</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在&lt;thrift/thrift-config.h&gt;中</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> PACKAGE_VERSION  <span class="meta-string">"$&#123;PACKAGE_VERSION&#125;"</span></span></div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h2 id="thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）"><a href="#thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）" class="headerlink" title="thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）"></a>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</h2><ul>
 <li>c++常规–附加包含目录：<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
@@ -252,12 +249,14 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjeyw2iyh00075gjx4z6j6nth" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjez2rdsw0004hsjxtnwkrfam" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
       
 
       
 
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/">visual studio 2017编译thrift0.11与libodb 2.4</a></li></ul>
+
     </footer>
   </div>
   
@@ -294,7 +293,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/你的第一个Meteor应用/">你的第一个Meteor应用</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/">visual studio 2017编译thrift0.11与libodb 2.4</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/你的第一个Meteor应用/">你的第一个Meteor应用</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -303,7 +302,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/你的第一个Meteor应用/" style="font-size: 10px;">你的第一个Meteor应用</a>
+      <a href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/" style="font-size: 10px;">visual studio 2017编译thrift0.11与libodb 2.4</a> <a href="/tags/你的第一个Meteor应用/" style="font-size: 20px;">你的第一个Meteor应用</a>
     </div>
   </div>
 

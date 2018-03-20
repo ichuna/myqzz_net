@@ -116,7 +116,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/hello-world/" data-id="cjeyw2iy800015gjx65z82hku" class="article-share-link" data-share="baidu" data-title="如何同步Hexo网站到github">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/hello-world/" data-id="cjez2rdsq0001hsjxwaere9ab" class="article-share-link" data-share="baidu" data-title="如何同步Hexo网站到github">Share</a>
       
 
       
@@ -186,16 +186,12 @@ z:\libraries\openssl\OpenSSL-Win32\lib;
 Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;
 </code></pre></li>
 </ul>
-<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：</p>
-<ul>
-<li>在stdafx.h中添加<pre><code>#define WIN32_LEAN_AND_MEAN
-</code></pre></li>
-</ul>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#在stdafx.h中添加</div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> WIN32_LEAN_AND_MEAN</span></div></pre></td></tr></table></figure></p>
 <h2 id="openssl-编译设置"><a href="#openssl-编译设置" class="headerlink" title="openssl 编译设置"></a>openssl 编译设置</h2><ul>
 <li>动态编译<pre><code>WIN64
 perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
 nmake clean
-nmake 
+nmake
 nmake test
 nmake install
 </code></pre></li>
@@ -211,11 +207,12 @@ nmake install
 </ul>
 <h2 id="thrift-0-11-0编译问题及解决："><a href="#thrift-0-11-0编译问题及解决：" class="headerlink" title="thrift 0.11.0编译问题及解决："></a>thrift 0.11.0编译问题及解决：</h2><ul>
 <li>一、包含目录要加上openssl的目录引用</li>
-<li>二、THttpserver.cpp与THttpclient.cpp中的<pre><code>#include &lt;thrift/config.h&gt;改为
-#include &lt;thrift/thrift.h&gt;
-</code></pre></li>
-<li>三、在<thrift thrift-config.h="">中添加以下宏定义<pre><code>#define PACKAGE_VERSION  &quot;${PACKAGE_VERSION}&quot;
-</code></pre></thrift></li>
+<li><p>二、THttpserver.cpp与THttpclient.cpp中的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//#include &lt;thrift/config.h&gt;此行改为</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thrift/thrift.h&gt;</span></span></div></pre></td></tr></table></figure>
+</li>
+<li><p>三、添加以下宏定义</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在&lt;thrift/thrift-config.h&gt;中</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> PACKAGE_VERSION  <span class="meta-string">"$&#123;PACKAGE_VERSION&#125;"</span></span></div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h2 id="thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）"><a href="#thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）" class="headerlink" title="thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）"></a>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</h2><ul>
 <li>c++常规–附加包含目录：<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
@@ -269,12 +266,14 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjeyw2iyh00075gjx4z6j6nth" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
+        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjez2rdsw0004hsjxtnwkrfam" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
       
 
       
 
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/">visual studio 2017编译thrift0.11与libodb 2.4</a></li></ul>
+
     </footer>
   </div>
   
@@ -307,40 +306,65 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
         <h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><p>刚开始学习如何编制Web应用的开发者的一个大错误是在对要创建的东西还没有一个清淅的认识时就开始进行。但这就像开车去一个新的目的地却没有地图。你可能会在正确的方向有一个小的进展,但你可能不会到达你需要去的地方。你不需要从一开始就知道一切,但你的确至少需要一个方向。</p>
 <p>记住这一点,我们要构建Leaderboard(排行榜)——Meteor开发团队设计的一个示例应用程序展示Meteor用很少的几行代码能做什么。<br>这就是它看起来的样子:</p>
 <p>Leaderboard已经在官网上已经被更高级的例子取代了,但它会是我们的示例项目,主要有两个原因:<br>首先,这个应用程序已经存在。我们可以玩,这意味着我们可以在我们编写单行代码前对我们试图创建的应用有一个好的认识。<br>第二,应用程序很简单。这意味着我们不需要担心构建软件的概念(这通常是最困难的一部分)。相反,我们可以集中学习Meteor本身。</p>
-<p>要获得实际的时间和排行榜,请访问leaderboard2.meteor.com,点击,注意其核心特征:<br>•有玩家的列表。<br>•每个球员都有一个分数。<br>•球员得分排名。<br>•你可以选择玩家通过点击它们。<br>•你可以增加一个选择球员的得分。</p>
+<p>要获得实际的时间和排行榜,请访问leaderboard2.meteor.com,点击,注意其核心特征:</p>
+<ul>
+<li>有玩家的列表。</li>
+<li>每个球员都有一个分数。</li>
+<li>球员得分排名。</li>
+<li>你可以选择玩家通过点击它们。</li>
+<li>你可以增加一个选择球员的得分。</li>
+</ul>
 <p>在后面的章节中我们将创建附加功能,但即使相对较短的列表也涉及许多Meteor的核心功能。</p>
-<p>创建一个项目</p>
-<p>创建我们的第一个Meteor应用程序,我们将需要创建我们的第一个项目,一个项目是一组自包含的文件表单应用程序的基础。您可以使用单词<br>“project”和“application”互换使用,但在谈到被开发的应用时“project”会更合适。<br>每个项目都是不同的,但是一般会包含:<br>•HTML文件,创建接口。<br>•CSS文件,指定样式的界面。<br>•JavaScript文件,定义应用程序逻辑。<br>•文件夹,确保都是组织良好的。</p>
+<h3 id="创建一个项目"><a href="#创建一个项目" class="headerlink" title="创建一个项目"></a>创建一个项目</h3><p>创建我们的第一个Meteor应用程序,我们将需要创建我们的第一个项目,一个项目是一组自包含的文件表单应用程序的基础。您可以使用单词<br>“project”和“application”互换使用,但在谈到被开发的应用时“project”会更合适。<br>每个项目都是不同的,但是一般会包含:</p>
+<ul>
+<li>HTML文件,创建接口。</li>
+<li>CSS文件,指定样式的界面。</li>
+<li>JavaScript文件,定义应用程序逻辑。</li>
+<li>文件夹,确保都是组织良好的。</li>
+</ul>
 <p>一个项目可以包含其他类型的文件,如图片和CoffeeScript文件,但在这本书中我们会尽可能保持简单,只展示我们需要的。</p>
 <p>在我们创建Leaderboard应用项目前,让我们创建一个文件夹来存储我们的Meteor项目。我们不是必须这样做,但为了保持的东西<br>有条理，这是一个好主意。</p>
 <p>当然,我们可以选择“新建文件夹”选项从“文件”菜单,但这哪儿有乐趣?相反,输入以下命令行:</p>
-<p>mkdir Meteor</p>
-<p>然后点击“回车”键。</p>
+<pre><code>mkdir Meteor
+</code></pre><p>然后点击“回车”键。</p>
 <p>使用mkdir命令创建一个文件夹。这mkdir命令代表“目录”,从这个名字你可能猜到,它允许我们做出一个目录。</p>
 <p>在这个实例中,我们创建一个名为“Meteor”的目录,但是您可以调用任何你想要的文件夹。的精确位置的文件夹就会出现将取决于你操作系统,但至少在Mac OS X上,将出现在“家”的文件夹目录<br>默认情况下。(如果你找不到文件夹,创建简单的搜索你的电脑。)<br>一旦准备好了目录,导航到它使用下面的命令:</p>
-<p>cd Meteor</p>
-<p>cd命令代表“改变目录”命令行相当于在图形界面中双击一个目录,按下“回车”键后,我们将在“Meteor”目录。</p>
+<pre><code>cd Meteor
+</code></pre><p>cd命令代表“改变目录”命令行相当于在图形界面中双击一个目录,按下“回车”键后,我们将在“Meteor”目录。</p>
 <p>导航到“Meteor”文件夹。</p>
 <p>然后在这个目录中创建一个Meteor项目,运行如下命令:</p>
-<p>meteor create leaderboard</p>
-<p>这个命令有三个部分:<br>•meteor部分定义这是一个meteor命令。<br>•create部分澄清,我们想创建一个meteor项目。<br>•leaderboard的部分是我们分配给项目的名称。</p>
+<pre><code>meteor create leaderboard
+</code></pre><p>这个命令有三个部分:</p>
+<ul>
+<li>meteor部分定义这是一个meteor命令。</li>
+<li>create部分澄清,我们想创建一个meteor项目。</li>
+<li>leaderboard的部分是我们分配给项目的名称。</li>
+</ul>
 <p>运行此命令后,会出现一个“leaderboard”目录内的“meteor”文件夹,默认情况下,该文件夹将包含三个文件:</p>
-<p>•leaderboard.html<br>•leaderboard.css<br>•leaderboard.js</p>
+<ul>
+<li>leaderboard.html</li>
+<li>leaderboard.css</li>
+<li>leaderboard.js</li>
+</ul>
 <p>它还包含一个隐藏文件夹.meteor,但如果您的操作系统从视图中隐藏了这个文件夹,这很好。我们不会碰它。</p>
 <p>在我们的项目的文件夹</p>
-<p>本地服务器</p>
-<p>Web应用程序不像静态网站。我们不能只是打开leaderboard.html文件就奇迹的看到一个动态的Meteor的动态应用程序。事实上,如果我们在Chrome浏览器打开该文件,所有我们会看到的是一些静态文本:</p>
+<h3 id="本地服务器"><a href="#本地服务器" class="headerlink" title="本地服务器"></a>本地服务器</h3><p>Web应用程序不像静态网站。我们不能只是打开leaderboard.html文件就奇迹的看到一个动态的Meteor的动态应用程序。事实上,如果我们在Chrome浏览器打开该文件,所有我们会看到的是一些静态文本:</p>
 <p>没有什么动态。</p>
 <p>要得到我们计划中的web应用程序,我们需要启动所谓的本地服务器。这是一个web服务器,在我们的本地机器上运行。它包含在Meteor中并允许<br>我们:</p>
-<p>1。看到我们的JavaScript代码的处理结果。<br>2。在我们的本地机器上运行一个数据库。</p>
-<p>如果你使用一个应用程序像MAMP部署PHP和MySQL,这将是熟悉,但如果这一切听起来可怕,不要害怕。在实践中,这很简单。<br>通过命令行中,导航到“leaderboard”目录中:</p>
-<p>cd leaderboard</p>
-<p>然后输入以下命令:</p>
-<p>meteor run</p>
-<p>这里,meteor的部分定义了这是一个meteor命令，run部分阐明了我们要采取的精确行动。在这种情况下,我们想要运行本地服务器。</p>
+<pre><code>1.看到我们的JavaScript代码的处理结果。
+2.在我们的本地机器上运行一个数据库。
+</code></pre><p>如果你使用一个应用程序像MAMP部署PHP和MySQL,这将是熟悉,但如果这一切听起来可怕,不要害怕。在实践中,这很简单。<br>通过命令行中,导航到“leaderboard”目录中:</p>
+<pre><code>cd leaderboard
+</code></pre><p>然后输入以下命令:</p>
+<pre><code>meteor run
+</code></pre><p>这里,meteor的部分定义了这是一个meteor命令，run部分阐明了我们要采取的精确行动。在这种情况下,我们想要运行本地服务器。</p>
 <p>启动本地服务器。</p>
-<p>利用“回车”键后,将显示如下:<br>=&gt;Started proxy.<br>=&gt;Started MongoDB.<br>=&gt;Started youApp<br>=&gt;running at: <a href="http://localhost:3000/r" target="_blank" rel="external">http://localhost:3000/r</a> app.</p>
-<p>这些线确认本地服务器启动和URL的最后一行- <a href="http://localhost:3000——是我们现在可以使用项目在web浏览器中查看我们的Meteor。" target="_blank" rel="external">http://localhost:3000——是我们现在可以使用项目在web浏览器中查看我们的Meteor。</a></p>
+<p>利用“回车”键后,将显示如下:</p>
+<pre><code>=&gt;Started proxy.
+=&gt;Started MongoDB.
+=&gt;Started youApp 
+=&gt;running at: http://localhost:3000/r app.
+</code></pre><p>这些线确认本地服务器启动和URL的最后一行- <a href="http://localhost:3000——是我们现在可以使用项目在web浏览器中查看我们的Meteor。" target="_blank" rel="external">http://localhost:3000——是我们现在可以使用项目在web浏览器中查看我们的Meteor。</a></p>
 <p>导航到该URL在Chrome和注意,我们不再看到静态文本。相反,我们看到一个功能的web应用程序。应用程序本身是代码的结果这是包含在每个流星项目默认情况下,这并不是最有趣的创造在世界上,但是我们仍然在正确的方向上迈出了一步。</p>
 <p>这是默认的流星的应用程序。<br>不断地查看代码的结果,我们需要保持本地服务器运行。这个简单的<br>那就意味着要离开命令行打开从这一点开始。然而,您将需要打开<br>一个单独的标签或窗口进一步写命令:<br>一个单独的运行命令的选项卡。<br>在本地服务器停止,要么退出命令行,或命令行焦点,<br>项目22<br>在你的键盘上按CTRL + C。然后再次启动本地服务器,使用相同的命令<br>之前:<br>流星跑<br>只要确保你在一个项目的文件夹在运行命令之前。<br>项目23<br>默认应用程序<br>默认应用程序没有什么特别的,但是如果我们点击“点击我”按钮,这个号码<br>在屏幕上就会增加。这提供了一个相当普通的流星的实时演示<br>特性。这个应用程序背后的代码,但是,不正是重要的因为我们将讨论<br>在接下来的章节更大范围。<br>目前,打开项目文件和删除所有的默认代码。甚至不看看<br>代码。刚刚摆脱它。我们想要从一个完全空白。<br>一旦完成,在JavaScript中输入以下文件:<br>控制台。日志(“Hello world”);<br>然后保存文件并打开JavaScript控制台在铬:<br>1。单击视图菜单。<br>2。悬停在开发人员选择。<br>3所示。选择JavaScript控制台选项。<br>窗格的底部将打开浏览器并显示“Hello world”我们的文本<br>通过控制台。日志语句。<br>“Hello World”的文本出现在JavaScript控制台。<br>项目24<br>如果这是熟悉的,很好。如果不是,那么知道控制台。日志语句用于看到输出结果<br>不创建一个接口的代码显示输出。这意味着,在我们投资<br>时间为创建一个接口,我们可以:<br>1。确认我们的代码是按预期工作。<br>2。尽快修复任何错误出现。<br>我们还可以使用控制台操作应用程序的数据库,这是我们要做的<br>下一章。<br>离开控制台打开从这一点开始,但是随时删除控制台。日志语句<br>在JavaScript文件。<br>项目25<br>总结<br>在这一章,我们了解到:<br>•当学习如何构建一个web应用程序,重要的是要有一个清晰的认识<br>你想构建。<br>•命令行可以用来迅速达到熟悉的任务,如创建文件夹和<br>他们之间导航。<br>•开发流星应用程序时,我们将它作为一个“项目”,我们可以创建一个<br>项目与流星创建命令。<br>•来查看我们的web应用程序在本地机器上,我们可以用流星运行命令<br>启动一个本地web服务器。<br>•当结合控制台。日志语句,JavaScript控制台是一个非常方便的工具<br>流星发展。<br>流星的更深层次的理解:<br>•如果你还没有,玩耍与原排行榜的应用程序。它不<br>有很多功能,但这只是意味着没有理由不是有很强的把握的<br>它的功能。<br>•关闭命令行应用程序,然后重新打开它,回到你在哪里。<br>你应该能够浏览到您的项目的文件夹cd命令启动<br>本地服务器与流星跑。<br>•创建第二个流星项目和使用这个项目尝试当你学习<br>一些新的东西。折腾了为了这是一个很好的方式钻细节<br>深入你的大脑。<br>在其当前状态查看代码,查看GitHub提交。</p>
 <p>数据库中,第1部分<br>写一个技术书的一个困难的部分是决定何时引入某些想法。<br>需要教的主题书之间是一致的,但你说的顺序<br>他们可以大大影响读者理解某些内容的能力。<br>例如,往往技术作者尽可能谈论创建一个接口<br>尽快这是因为看到很有趣的视觉结果代码,和很高兴的感觉<br>像你做出了很快的进步。<br>但是这种方法并介绍一下几个问题:<br>1。很难掌握任何有关前端(接口)当你没有<br>熟悉后端(数据库,等等)。<br>2。如果我们首先谈论的前端,我们将不得不回顾在下一章,所以任何<br>快速进步的感觉将是短暂的。<br>因此,我们将首先讨论我们的项目内创建和管理数据库。这<br>不是一个“性感”的话题,但是如果我们花几分钟覆盖基础,我们将有一个强大的<br>本书的其余部分的基础。<br>26<br>第1部分数据库,27岁<br>MongoDB vs . SQL<br>如果您已经构建了一些之前在网上,你可能接触到<br>的数据库。也许你安装WordPress的副本,或使用phpMyAdmin,甚至建造<br>一些软件语言像PHP。在这些情况下,您会接触到<br>一个SQL数据库。<br>默认情况下,每个流星项目有自己的数据库。没有安装或配置<br>必需的。当你创建一个项目时,会自动创建一个数据库项目,和<br>当本地服务器正在运行,那么数据库。然而,这个数据库并不是一个SQL<br>数据库。相反,它是所谓的MongoDB数据库。<br>如果你之前从未遇到MongoDB,你可能会有点担心,但不要害怕。蒙戈<br>数据库和SQL数据库不同,但是作为初学者而言,差异<br>很小。<br>目前,你只需要知道两件事:<br>首先,没有其他类型的数据库用于流星。如果你想使用一个SQL<br>数据库,例如,它是不可能的。其他选项可以在未来,但是<br>时间其实还不清楚。<br>第二,蒙戈使用不同的词汇来描述熟知的概念。例如,我们不会<br>使用“表”和“行”这样的词,但概念基本上是相同的。你可以看到<br>这个表的差异:<br>MongoDB vs . SQL<br>会很难想起概念熟悉新单词,但是我将提供大量的提醒<br>通过这本书我们进步。<br>第1部分数据库,28<br>创建一个集合<br>排行榜的中央功能应用程序的列表的球员。没有球员的名单<br>出现在界面,我们不能建立其他任何有价值的物品。因此这是一个好地方<br>开始——从应用程序的“中间”,向外工作的细节。<br>这里有两个问题需要考虑:<br>•我们在哪里存储与每个玩家相关的数据?<br>•我们如何显示这些数据从内部接口?<br>我们将在下一章回答第二个问题,但第一个问题:“在哪里<br>我们与每个球员关联存储数据吗?”<br>滑稽的答案将是“数据库”,但更有用的答案”<br>收集”,如前一节所示,相当于一个SQL表集合。<br>为了说明的目的收集,想象我们正在创建自己的版本的WordPress<br>流星。如果是这样的话,我们会创建一个集合的文章,为集合<br>评论,和一组页面。我们会创建一个为每个类型的数据收集。自<br>我们创建这个排行榜的应用程序,我们将创建一个集合的球员。<br>要做到这一点,打开JavaScript文件,写如下声明:<br>新的Mongo.Collection(球员);<br>在这里,我们创建一个集合命名为“玩家”在我们项目的Mongo数据库。你可以<br>名字收集任何你想要的,但它必须是唯一的。如果名字不是独一无二的,流星<br>将返回一个错误。<br>尽管这行代码,我们还没有供我们参考这个集合定义了一个方法,<br>因此我们没有办法操作。<br>为了解决这个问题,将集合在一个变量:<br>PlayersList = new Mongo.Collection(球员);<br>但请注意,我们没有使用var关键字,因为我们想要创建一个全球性的<br>变量。这将允许我们引用和操作在我们所有的集合<br>项目的文件。<br>确认收集存在,保存文件,切换到Chrome浏览器,并输入的名称<br>集合的变量为控制台:<br>PlayersList<br>第1部分数据库,29岁<br>您应当会看到类似如下:<br>集合的存在。<br>这表明集合是按预期工作。<br>如果返回一个错误,这可能是因为你的名字输入错误变量在控制台,<br>或在代码中犯了一个语法错误。<br>数据库中,第1部分30<br>插入数据<br>当我们想将数据插入一个集合,我们有四个选项。我们可以通过插入数据<br>JavaScript控制台,通过命令行,通过JavaScript文件,并通过<br>形式的界面。我们将看到如何使用所有这些选项在这本书,但第一<br>选项-通过JavaScript控制台是最简单的,所以这是最好的起点。<br>在控制台中,写如下:<br>PlayersList.insert();<br>这是我们使用的语法来操纵一个集合。<br>我们开始分配给变量集合,然后——“PlayersList”变量<br>附加功能。在本例中,我们使用插入函数,但是有一个范围的<br>功能,如查找、更新和删除(和我们将讨论这些很快的细节)。<br>但是,如果我们把“返回”键在这一点上,没有什么会发生,那是因为我们<br>需要在函数的括号之间传递数据改变的内容<br>集合。<br>我们通过的数据需要以JSON格式,如果你不熟悉<br>JSON格式,这就是它的样子:<br>{<br>名称:“大卫”,<br>得分:0<br>}<br>在这里,有几个事情:<br>首先,数据是用一对大括号。这就是我们如何区分我们的JSON数据<br>剩下的代码。<br>第二,我们已经定义了一对密钥。这些键被称为名字和分数,蒙戈<br>术语,这些是我们收集的字段。因为每个球员将集合<br>有一个名称和一个分数,名字和分数字段来保存这些值。<br>第三,我们已经定义了与我们的键相关联的值。在这种情况下,价值的名字<br>字段是“大卫”和分数字段的值是0。<br>第四,键值用逗号隔开。这是因为JSON格式<br>忽略空白,所以逗号是需要提供结构。<br>我们可以通过这些数据通过括号,像这样:<br>第1部分数据库,31日<br>PlayersList.insert({<br>名称:“大卫”,<br>得分:0<br>});<br>这是一个完整的插入功能,如果我们这个语句输入到控制台和挖掘<br>“返回”键,将会创建一个文档在“PlayersList”集合。文档是<br>相当于SQL行和,在这一点上,我们要为每个玩家创建一个文档<br>希望在我们的集合。如果我们希望我们的排行榜包含六名球员,我们需要使用<br>六次插入函数,从而创建6个文档。<br>插入数据。<br>为了实现这一点,重复这句话几次,确保定义独特的值<br>名称字段,所以我们可以区分球员:<br>PlayersList.insert({<br>名称:“鲍勃”,<br>得分:0<br>});<br>由于忽略空白,语句可以写在一行:<br>PlayersList。插入({ name:“鲍勃”,得分:0 });<br>数据库中,第1部分32<br>也请注意,创建每个文档后,会出现一个随机的数字和字母<br>在控制台。这种混乱的局面是一个独特的ID MongoDB和自动创建的<br>与每个文档相关联。它的主键,它会是重要的。<br>目前,只注意到它的存在所以你不惊讶当我们讨论一遍。<br>在我们继续之前,更多的玩家插入集合。示例应用程序<br>六名球员,应该够了。<br>球员们在我的名单是:<br>•大卫<br>•鲍勃<br>•玛丽<br>•比尔<br>•沃伦<br>•蒂姆<br>他们都有得分字段设置为0。<br>将剩下的球员。<br>第1部分数据库,33<br>找到数据<br>现在,我们有一些数据收集,我们能够检索这些数据。我们将这样做<br>接口在下一章,但就目前而言,我们只是通过控制台。<br>在控制台,输入以下:<br>PlayersList.find();<br>在这里,我们使用这个找到函数,用于检索数据从指定的集合。<br>因为我们没有任何穿过支架,该语句将检索所有的<br>的数据集合。<br>以下应该出现在控制台:<br>使用find函数。<br>但很明显,这不是最可读的回应。我们的应用程序可以是有意义的,但是<br>我们不能。<br>检索数据更可读的格式,附加一个获取函数的转换<br>检索到的数据转换成一个数组:<br>.fetch PlayersList.find()();<br>第1部分数据库、34<br>您应该看到如下:<br>使用查找和获取功能。<br>我们也可以单击下箭头与每个文档相关的数据,<br>包括:<br>•_id字段,存储文档的惟一的ID(“主键”,我们<br>之前提到过)。<br>•名称字段,存储的球员的名字。<br>•比分字段,存储得分的球员。<br>但是如果我们想要检索的数据的集合,而不是所有的<br>数据?要做到这一点,我们可以通过json格式的数据之间的括号:<br>PlayersList。找到({ name:“大卫”}).fetch();<br>这里,我们通过字段名和值通过发现功能,因此,我们可以<br>只检索文档,球员的名字字段等于“大卫”。在我们的例子中,这个<br>只检索一个文档,但是如果我们集合包含多个玩家叫“大卫”,<br>他们都是根据这个查询返回。<br>也有用的是计算能力的数量由一个查询返回的文件<br>将计数函数找到函数:<br>数据库中,第1部分35<br>.count PlayersList.find()();<br>因为这个语句将计数集合中的所有文档,如果有六名球员<br>(文件)的集合,6号返回。<br>第1部分数据库、36<br>总结<br>在这一章,我们了解到:<br>•当我们创建一个流星项目,蒙戈数据库自动创建,和<br>当本地服务器正在运行,那么数据库。<br>•Mongo数据库和SQL数据库不同,但差异是无关紧要的<br>初学者而言。<br>•为每一种类型的数据需要存储在Mongo数据库中,我们需要创建一个集合。<br>集合包含文档和文档的字段和值。<br>•使用插入函数,我们可以将数据插入一个集合。这个数据结构<br>以JSON格式。<br>•通过使用find函数,我们可以从集合中检索数据。这些数据就可以<br>通过使用控制台导航。<br>流星的更深层次的理解:<br>•注意,我们还没有预定义的数据库的结构。相反,结构<br>定义数据库的动态,我们使用插入函数。<br>•在一个单独的项目中,创建一个存储不同类型的数据的集合,比如博客<br>帖子,也许。什么样的字段集合有吗?<br>在其当前状态查看代码,查看GitHub提交。</p>
@@ -368,7 +392,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/12/09/Meteor-2/" data-id="cjeyw2iyw00085gjxvvq5lmdj" class="article-share-link" data-share="baidu" data-title="项目">Share</a>
+        <a data-url="http://myqzz.net/2016/12/09/Meteor-2/" data-id="cjez2rdt90008hsjxo0vc2km8" class="article-share-link" data-share="baidu" data-title="项目">Share</a>
       
 
       
@@ -445,7 +469,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/29/Meteor-1/" data-id="cjeyw2iy400005gjx1htq9w9u" class="article-share-link" data-share="baidu" data-title="Meteor入门">Share</a>
+        <a data-url="http://myqzz.net/2016/09/29/Meteor-1/" data-id="cjez2rdsl0000hsjxuv1m7qhy" class="article-share-link" data-share="baidu" data-title="Meteor入门">Share</a>
       
 
       
@@ -528,7 +552,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/19/note1/" data-id="cjeyw2iyf00055gjxqg5tcvxk" class="article-share-link" data-share="baidu" data-title="三支部活动记录">Share</a>
+        <a data-url="http://myqzz.net/2016/09/19/note1/" data-id="cjez2rdt00007hsjx1l3tot3j" class="article-share-link" data-share="baidu" data-title="三支部活动记录">Share</a>
       
 
       
@@ -767,7 +791,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/09/19/note/" data-id="cjeyw2iye00045gjxgnvawxm1" class="article-share-link" data-share="baidu" data-title="三支部三会一课笔记（支委版）">Share</a>
+        <a data-url="http://myqzz.net/2016/09/19/note/" data-id="cjez2rdsy0005hsjx8ueno419" class="article-share-link" data-share="baidu" data-title="三支部三会一课笔记（支委版）">Share</a>
       
 
       
@@ -807,7 +831,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqzz.net/2016/08/26/install-hexo/" data-id="cjeyw2iyd00035gjxz5g2iz9o" class="article-share-link" data-share="baidu" data-title="install_hexo">Share</a>
+        <a data-url="http://myqzz.net/2016/08/26/install-hexo/" data-id="cjez2rdsv0003hsjxsiih0wca" class="article-share-link" data-share="baidu" data-title="install_hexo">Share</a>
       
 
       
@@ -831,7 +855,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/你的第一个Meteor应用/">你的第一个Meteor应用</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/">visual studio 2017编译thrift0.11与libodb 2.4</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/你的第一个Meteor应用/">你的第一个Meteor应用</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -840,7 +864,7 @@ z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/你的第一个Meteor应用/" style="font-size: 10px;">你的第一个Meteor应用</a>
+      <a href="/tags/visual-studio-2017编译thrift0-11与libodb-2-4/" style="font-size: 10px;">visual studio 2017编译thrift0.11与libodb 2.4</a> <a href="/tags/你的第一个Meteor应用/" style="font-size: 20px;">你的第一个Meteor应用</a>
     </div>
   </div>
 
