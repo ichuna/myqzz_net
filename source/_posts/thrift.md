@@ -1,7 +1,7 @@
 ---
 title: thrift编译设置
 date: 2018-03-18 18:54:59
-tags: visual studio 2017编译thrift0.11与libodb 2.4 
+tags: 编译thrift0.11
 ---
 
 

@@ -22,8 +22,8 @@ widgets:
 
 # Links
 links:
-  出纳软件: http://www.ichuna.com
-  支票打印: http://www.myqzz.com
+  #出纳软件: http://www.ichuna.com
+  #支票打印: http://www.myqzz.com
 
 # Miscellaneous
 google_analytics:

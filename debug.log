@@ -1,0 +1,265 @@
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Hexo version: \u001b[35m3.2.2\u001b[39m","time":"2018-05-08T02:50:36.969Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Working directory: \u001b[35m~/hexo/myqzz_net/\u001b[39m","time":"2018-05-08T02:50:36.970Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Config loaded: \u001b[35m~/hexo/myqzz_net/_config.yml\u001b[39m","time":"2018-05-08T02:50:37.069Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Script loaded: \u001b[35mthemes/landscape-plus/scripts/fancybox.js\u001b[39m","time":"2018-05-08T02:50:37.102Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2018-05-08T02:50:37.112Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2018-05-08T02:50:37.117Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2018-05-08T02:50:37.128Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2018-05-08T02:50:37.133Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2018-05-08T02:50:37.159Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2018-05-08T02:50:37.290Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2018-05-08T02:50:37.292Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2018-05-08T02:50:37.430Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2018-05-08T02:50:37.544Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-fs\u001b[39m","time":"2018-05-08T02:50:37.594Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":30,"msg":"Deleted database.","time":"2018-05-08T02:50:37.599Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":30,"msg":"Deleted public folder.","time":"2018-05-08T02:50:37.634Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68334,"level":20,"msg":"Database saved","time":"2018-05-08T02:50:37.648Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Hexo version: \u001b[35m3.2.2\u001b[39m","time":"2018-05-08T02:52:46.494Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Working directory: \u001b[35m~/hexo/myqzz_net/\u001b[39m","time":"2018-05-08T02:52:46.497Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Config loaded: \u001b[35m~/hexo/myqzz_net/_config.yml\u001b[39m","time":"2018-05-08T02:52:46.625Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Script loaded: \u001b[35mthemes/landscape-plus/scripts/fancybox.js\u001b[39m","time":"2018-05-08T02:52:46.641Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2018-05-08T02:52:46.770Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2018-05-08T02:52:46.773Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2018-05-08T02:52:46.775Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2018-05-08T02:52:46.777Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2018-05-08T02:52:46.780Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2018-05-08T02:52:46.786Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2018-05-08T02:52:46.884Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2018-05-08T02:52:46.885Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2018-05-08T02:52:46.990Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-fs\u001b[39m","time":"2018-05-08T02:52:46.996Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Loading database.","time":"2018-05-08T02:52:47.000Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Start processing","time":"2018-05-08T02:52:47.225Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/Meteor-1.md\u001b[39m","time":"2018-05-08T02:52:47.290Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/hello-world.md\u001b[39m","time":"2018-05-08T02:52:47.291Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/install-hexo.md\u001b[39m","time":"2018-05-08T02:52:47.291Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/thrift.md\u001b[39m","time":"2018-05-08T02:52:47.291Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/wukong-story.md\u001b[39m","time":"2018-05-08T02:52:47.291Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_posts/Meteor-2.md\u001b[39m","time":"2018-05-08T02:52:47.305Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/bdshare.styl\u001b[39m","time":"2018-05-08T02:52:47.320Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Theme config loaded.","time":"2018-05-08T02:52:47.367Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35m_config.yml\u001b[39m","time":"2018-05-08T02:52:47.371Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/style.styl\u001b[39m","time":"2018-05-08T02:52:47.371Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/blank.gif\u001b[39m","time":"2018-05-08T02:52:47.372Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_loading.gif\u001b[39m","time":"2018-05-08T02:52:47.372Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_loading@2x.gif\u001b[39m","time":"2018-05-08T02:52:47.373Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_overlay.png\u001b[39m","time":"2018-05-08T02:52:47.373Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_sprite.png\u001b[39m","time":"2018-05-08T02:52:47.373Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_sprite@2x.png\u001b[39m","time":"2018-05-08T02:52:47.374Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.css\u001b[39m","time":"2018-05-08T02:52:47.374Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.js\u001b[39m","time":"2018-05-08T02:52:47.374Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.pack.js\u001b[39m","time":"2018-05-08T02:52:47.374Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/img/scrollup.png\u001b[39m","time":"2018-05-08T02:52:47.375Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/js/script.js\u001b[39m","time":"2018-05-08T02:52:47.375Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/archive.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/layout.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/index.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/page.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/post.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/tag.ejs\u001b[39m","time":"2018-05-08T02:52:47.478Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/category.ejs\u001b[39m","time":"2018-05-08T02:52:47.479Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlanguages/default.yml\u001b[39m","time":"2018-05-08T02:52:47.491Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-CN.yml\u001b[39m","time":"2018-05-08T02:52:47.492Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-TW.yml\u001b[39m","time":"2018-05-08T02:52:47.492Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/FontAwesome.otf\u001b[39m","time":"2018-05-08T02:52:47.492Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.eot\u001b[39m","time":"2018-05-08T02:52:47.493Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.ttf\u001b[39m","time":"2018-05-08T02:52:47.493Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.woff\u001b[39m","time":"2018-05-08T02:52:47.493Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.eot\u001b[39m","time":"2018-05-08T02:52:47.494Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.woff\u001b[39m","time":"2018-05-08T02:52:47.494Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/fancybox_buttons.png\u001b[39m","time":"2018-05-08T02:52:47.494Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-buttons.css\u001b[39m","time":"2018-05-08T02:52:47.494Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-buttons.js\u001b[39m","time":"2018-05-08T02:52:47.495Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-media.js\u001b[39m","time":"2018-05-08T02:52:47.495Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-thumbs.css\u001b[39m","time":"2018-05-08T02:52:47.495Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-thumbs.js\u001b[39m","time":"2018-05-08T02:52:47.495Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.svg\u001b[39m","time":"2018-05-08T02:52:47.498Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.ttf\u001b[39m","time":"2018-05-08T02:52:47.499Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/after-footer.ejs\u001b[39m","time":"2018-05-08T02:52:47.517Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/archive-post.ejs\u001b[39m","time":"2018-05-08T02:52:47.517Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/article.ejs\u001b[39m","time":"2018-05-08T02:52:47.519Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/archive.ejs\u001b[39m","time":"2018-05-08T02:52:47.519Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/footer.ejs\u001b[39m","time":"2018-05-08T02:52:47.519Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/google-analytics.ejs\u001b[39m","time":"2018-05-08T02:52:47.520Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/head.ejs\u001b[39m","time":"2018-05-08T02:52:47.520Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/header.ejs\u001b[39m","time":"2018-05-08T02:52:47.521Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/mathjax.ejs\u001b[39m","time":"2018-05-08T02:52:47.521Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/mobile-nav.ejs\u001b[39m","time":"2018-05-08T02:52:47.522Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/sidebar.ejs\u001b[39m","time":"2018-05-08T02:52:47.522Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/totop.ejs\u001b[39m","time":"2018-05-08T02:52:47.523Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/archive.ejs\u001b[39m","time":"2018-05-08T02:52:47.523Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/category.ejs\u001b[39m","time":"2018-05-08T02:52:47.523Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/links.ejs\u001b[39m","time":"2018-05-08T02:52:47.524Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/recent_posts.ejs\u001b[39m","time":"2018-05-08T02:52:47.524Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/tag.ejs\u001b[39m","time":"2018-05-08T02:52:47.524Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/tagcloud.ejs\u001b[39m","time":"2018-05-08T02:52:47.524Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.svg\u001b[39m","time":"2018-05-08T02:52:47.526Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35msource/css/images/banner.jpg\u001b[39m","time":"2018-05-08T02:52:47.526Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/date.ejs\u001b[39m","time":"2018-05-08T02:52:47.529Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/gallery.ejs\u001b[39m","time":"2018-05-08T02:52:47.530Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/category.ejs\u001b[39m","time":"2018-05-08T02:52:47.530Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/tag.ejs\u001b[39m","time":"2018-05-08T02:52:47.530Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/title.ejs\u001b[39m","time":"2018-05-08T02:52:47.530Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/nav.ejs\u001b[39m","time":"2018-05-08T02:52:47.530Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2018-05-08T02:52:47.565Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2018-05-08T02:52:47.568Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Files loaded in \u001b[36m578 ms\u001b[39m","time":"2018-05-08T02:52:47.577Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2018/05/07/wukong-story/index.html\u001b[39m","time":"2018-05-08T02:52:47.597Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2018/03/18/hello-world/index.html\u001b[39m","time":"2018-05-08T02:52:47.628Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2018/03/18/thrift/index.html\u001b[39m","time":"2018-05-08T02:52:47.642Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2016/12/09/Meteor-2/index.html\u001b[39m","time":"2018-05-08T02:52:47.659Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2016/09/29/Meteor-1/index.html\u001b[39m","time":"2018-05-08T02:52:47.680Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering post: \u001b[35m2016/08/26/install-hexo/index.html\u001b[39m","time":"2018-05-08T02:52:47.690Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/index.html\u001b[39m","time":"2018-05-08T02:52:47.696Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/index.html\u001b[39m","time":"2018-05-08T02:52:47.716Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/08/index.html\u001b[39m","time":"2018-05-08T02:52:47.729Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/09/index.html\u001b[39m","time":"2018-05-08T02:52:47.733Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/12/index.html\u001b[39m","time":"2018-05-08T02:52:47.743Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/index.html\u001b[39m","time":"2018-05-08T02:52:47.746Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/03/index.html\u001b[39m","time":"2018-05-08T02:52:47.762Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/05/index.html\u001b[39m","time":"2018-05-08T02:52:47.767Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering tag: \u001b[35mtags/你的第一个Meteor应用/index.html\u001b[39m","time":"2018-05-08T02:52:47.777Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering tag: \u001b[35mtags/编译thrift0-11/index.html\u001b[39m","time":"2018-05-08T02:52:47.782Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering tag: \u001b[35mtags/西游记外传之金箍棒的故事/index.html\u001b[39m","time":"2018-05-08T02:52:47.785Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Rendering index: \u001b[35mindex.html\u001b[39m","time":"2018-05-08T02:52:47.791Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2018/03/18/thrift/index.html\u001b[39m","time":"2018-05-08T02:52:48.097Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2016/08/26/install-hexo/index.html\u001b[39m","time":"2018-05-08T02:52:48.097Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/index.html\u001b[39m","time":"2018-05-08T02:52:48.098Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2016/index.html\u001b[39m","time":"2018-05-08T02:52:48.098Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2018/03/18/hello-world/index.html\u001b[39m","time":"2018-05-08T02:52:48.098Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2016/08/index.html\u001b[39m","time":"2018-05-08T02:52:48.098Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2016/09/index.html\u001b[39m","time":"2018-05-08T02:52:48.098Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2016/12/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2016/09/29/Meteor-1/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2018/03/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2018/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35marchives/2018/05/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35mtags/你的第一个Meteor应用/index.html\u001b[39m","time":"2018-05-08T02:52:48.099Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35mtags/编译thrift0-11/index.html\u001b[39m","time":"2018-05-08T02:52:48.100Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35mtags/西游记外传之金箍棒的故事/index.html\u001b[39m","time":"2018-05-08T02:52:48.100Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2016/12/09/Meteor-2/index.html\u001b[39m","time":"2018-05-08T02:52:48.100Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35m2018/05/07/wukong-story/index.html\u001b[39m","time":"2018-05-08T02:52:48.100Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"Generated: \u001b[35mindex.html\u001b[39m","time":"2018-05-08T02:52:48.100Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":30,"msg":"18 files generated in \u001b[36m523 ms\u001b[39m","time":"2018-05-08T02:52:48.101Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68442,"level":20,"msg":"Database saved","time":"2018-05-08T02:52:48.136Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Hexo version: \u001b[35m3.2.2\u001b[39m","time":"2018-05-08T02:54:25.913Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Working directory: \u001b[35m~/hexo/myqzz_net/\u001b[39m","time":"2018-05-08T02:54:25.916Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Config loaded: \u001b[35m~/hexo/myqzz_net/_config.yml\u001b[39m","time":"2018-05-08T02:54:26.037Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Script loaded: \u001b[35mthemes/landscape-plus/scripts/fancybox.js\u001b[39m","time":"2018-05-08T02:54:26.056Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2018-05-08T02:54:26.061Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2018-05-08T02:54:26.064Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2018-05-08T02:54:26.078Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2018-05-08T02:54:26.084Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2018-05-08T02:54:26.234Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2018-05-08T02:54:26.239Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2018-05-08T02:54:26.336Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2018-05-08T02:54:26.337Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2018-05-08T02:54:26.428Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-fs\u001b[39m","time":"2018-05-08T02:54:26.461Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Loading database.","time":"2018-05-08T02:54:26.463Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":30,"msg":"Start processing","time":"2018-05-08T02:54:26.726Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/Meteor-1.md\u001b[39m","time":"2018-05-08T02:54:26.815Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/hello-world.md\u001b[39m","time":"2018-05-08T02:54:26.815Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/install-hexo.md\u001b[39m","time":"2018-05-08T02:54:26.815Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/thrift.md\u001b[39m","time":"2018-05-08T02:54:26.816Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/wukong-story.md\u001b[39m","time":"2018-05-08T02:54:26.816Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_posts/Meteor-2.md\u001b[39m","time":"2018-05-08T02:54:26.832Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/bdshare.styl\u001b[39m","time":"2018-05-08T02:54:26.833Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/style.styl\u001b[39m","time":"2018-05-08T02:54:26.859Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/blank.gif\u001b[39m","time":"2018-05-08T02:54:26.860Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_loading.gif\u001b[39m","time":"2018-05-08T02:54:26.860Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_loading@2x.gif\u001b[39m","time":"2018-05-08T02:54:26.861Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_overlay.png\u001b[39m","time":"2018-05-08T02:54:26.861Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_sprite.png\u001b[39m","time":"2018-05-08T02:54:26.861Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/fancybox_sprite@2x.png\u001b[39m","time":"2018-05-08T02:54:26.862Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.css\u001b[39m","time":"2018-05-08T02:54:26.862Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.js\u001b[39m","time":"2018-05-08T02:54:26.862Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/jquery.fancybox.pack.js\u001b[39m","time":"2018-05-08T02:54:26.863Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/img/scrollup.png\u001b[39m","time":"2018-05-08T02:54:26.863Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/js/script.js\u001b[39m","time":"2018-05-08T02:54:26.863Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Theme config loaded.","time":"2018-05-08T02:54:26.879Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35m_config.yml\u001b[39m","time":"2018-05-08T02:54:26.880Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/archive.ejs\u001b[39m","time":"2018-05-08T02:54:26.955Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/category.ejs\u001b[39m","time":"2018-05-08T02:54:26.956Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/index.ejs\u001b[39m","time":"2018-05-08T02:54:26.956Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/layout.ejs\u001b[39m","time":"2018-05-08T02:54:26.957Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/page.ejs\u001b[39m","time":"2018-05-08T02:54:26.957Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/post.ejs\u001b[39m","time":"2018-05-08T02:54:26.957Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/tag.ejs\u001b[39m","time":"2018-05-08T02:54:26.958Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlanguages/default.yml\u001b[39m","time":"2018-05-08T02:54:26.970Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-CN.yml\u001b[39m","time":"2018-05-08T02:54:26.970Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-TW.yml\u001b[39m","time":"2018-05-08T02:54:26.970Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/FontAwesome.otf\u001b[39m","time":"2018-05-08T02:54:26.972Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.eot\u001b[39m","time":"2018-05-08T02:54:26.973Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.ttf\u001b[39m","time":"2018-05-08T02:54:26.973Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.woff\u001b[39m","time":"2018-05-08T02:54:26.974Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.eot\u001b[39m","time":"2018-05-08T02:54:26.974Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.woff\u001b[39m","time":"2018-05-08T02:54:26.975Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/fancybox_buttons.png\u001b[39m","time":"2018-05-08T02:54:26.975Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-buttons.css\u001b[39m","time":"2018-05-08T02:54:26.975Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-buttons.js\u001b[39m","time":"2018-05-08T02:54:26.975Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-media.js\u001b[39m","time":"2018-05-08T02:54:26.976Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-thumbs.css\u001b[39m","time":"2018-05-08T02:54:26.976Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/fancybox/helpers/jquery.fancybox-thumbs.js\u001b[39m","time":"2018-05-08T02:54:26.976Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/coveredbyyourgrace-webfont.svg\u001b[39m","time":"2018-05-08T02:54:26.979Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.ttf\u001b[39m","time":"2018-05-08T02:54:26.979Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/after-footer.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/archive-post.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/archive.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/footer.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/google-analytics.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/article.ejs\u001b[39m","time":"2018-05-08T02:54:26.991Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/head.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/mathjax.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/header.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/mobile-nav.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/sidebar.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/archive.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/totop.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/category.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/links.ejs\u001b[39m","time":"2018-05-08T02:54:26.992Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/recent_posts.ejs\u001b[39m","time":"2018-05-08T02:54:26.993Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/tag.ejs\u001b[39m","time":"2018-05-08T02:54:26.993Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_widget/tagcloud.ejs\u001b[39m","time":"2018-05-08T02:54:26.993Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/fonts/fontawesome-webfont.svg\u001b[39m","time":"2018-05-08T02:54:26.995Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35msource/css/images/banner.jpg\u001b[39m","time":"2018-05-08T02:54:26.995Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/category.ejs\u001b[39m","time":"2018-05-08T02:54:26.998Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/date.ejs\u001b[39m","time":"2018-05-08T02:54:26.998Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/gallery.ejs\u001b[39m","time":"2018-05-08T02:54:26.998Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/nav.ejs\u001b[39m","time":"2018-05-08T02:54:26.998Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/tag.ejs\u001b[39m","time":"2018-05-08T02:54:26.998Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Processed: \u001b[35mlayout/_partial/post/title.ejs\u001b[39m","time":"2018-05-08T02:54:26.999Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2018-05-08T02:54:27.032Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2018-05-08T02:54:27.033Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2018-05-08T02:54:27.033Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2018-05-08T02:54:27.033Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2018-05-08T02:54:27.034Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2018-05-08T02:54:27.034Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2018-05-08T02:54:27.041Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":30,"msg":"Files loaded in \u001b[36m586 ms\u001b[39m","time":"2018-05-08T02:54:27.049Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2018/05/07/wukong-story/index.html\u001b[39m","time":"2018-05-08T02:54:27.060Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2018/03/18/hello-world/index.html\u001b[39m","time":"2018-05-08T02:54:27.096Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2018/03/18/thrift/index.html\u001b[39m","time":"2018-05-08T02:54:27.116Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2016/12/09/Meteor-2/index.html\u001b[39m","time":"2018-05-08T02:54:27.135Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2016/09/29/Meteor-1/index.html\u001b[39m","time":"2018-05-08T02:54:27.161Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering post: \u001b[35m2016/08/26/install-hexo/index.html\u001b[39m","time":"2018-05-08T02:54:27.169Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/index.html\u001b[39m","time":"2018-05-08T02:54:27.176Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/index.html\u001b[39m","time":"2018-05-08T02:54:27.197Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/08/index.html\u001b[39m","time":"2018-05-08T02:54:27.227Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/09/index.html\u001b[39m","time":"2018-05-08T02:54:27.233Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2016/12/index.html\u001b[39m","time":"2018-05-08T02:54:27.240Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/index.html\u001b[39m","time":"2018-05-08T02:54:27.244Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/03/index.html\u001b[39m","time":"2018-05-08T02:54:27.252Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering archive: \u001b[35marchives/2018/05/index.html\u001b[39m","time":"2018-05-08T02:54:27.277Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering index: \u001b[35mindex.html\u001b[39m","time":"2018-05-08T02:54:27.280Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering tag: \u001b[35mtags/你的第一个Meteor应用/index.html\u001b[39m","time":"2018-05-08T02:54:27.342Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering tag: \u001b[35mtags/编译thrift0-11/index.html\u001b[39m","time":"2018-05-08T02:54:27.347Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Rendering tag: \u001b[35mtags/西游记外传之金箍棒的故事/index.html\u001b[39m","time":"2018-05-08T02:54:27.350Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":30,"msg":"0 files generated in \u001b[36m616 ms\u001b[39m","time":"2018-05-08T02:54:27.666Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":68520,"level":20,"msg":"Database saved","time":"2018-05-08T02:54:27.693Z","v":0}
