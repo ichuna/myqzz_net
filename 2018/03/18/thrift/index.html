@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>thrift编译设置 | 小爱学习笔记</title>
+  <meta name="keywords" content "" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
+Z:\libraries\boost\boost_1_66_0;
+
+
+
+预处理器定义
+HAVE_CONFIG_H=1
+WIN32
+_DEBUG
+_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="thrift编译设置">
+<meta property="og:url" content="http://myqzz.net/2018/03/18/thrift/index.html">
+<meta property="og:site_name" content="小爱学习笔记">
+<meta property="og:description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
+Z:\libraries\boost\boost_1_66_0;
+
+
+
+预处理器定义
+HAVE_CONFIG_H=1
+WIN32
+_DEBUG
+_">
+<meta property="og:updated_time" content="2018-03-20T03:19:30.590Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="thrift编译设置">
+<meta name="twitter:description" content="thrift编译设置
+
+附加包含目录Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
+Z:\libraries\boost\boost_1_66_0;
+
+
+
+预处理器定义
+HAVE_CONFIG_H=1
+WIN32
+_DEBUG
+_">
+  
+    <link rel="alternative" href="/atom.xml" title="小爱学习笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  <!--<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'  -->
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="http://demo.myqzz.com/Setup.exe" alt title="立即下载《打印专家》" id="logo">小爱学习笔记</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录我的学习历程</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/home">首页</a>
+        
+          <a class="main-nav-link" href="/archives">文档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="myqzz.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-thrift" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/18/thrift/" class="article-date">
+  <time datetime="2018-03-19T01:54:59.000Z" itemprop="datePublished">2018-03-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      thrift编译设置
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="thrift编译设置"><a href="#thrift编译设置" class="headerlink" title="thrift编译设置"></a>thrift编译设置</h2><hr>
+<ul>
+<li>附加包含目录<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows;
+Z:\libraries\boost\boost_1_66_0;
+</code></pre></li>
+</ul>
+<ul>
+<li><p>预处理器定义</p>
+<pre><code>HAVE_CONFIG_H=1
+WIN32
+_DEBUG
+_CONSOLE
+</code></pre></li>
+<li><p>代码生成：</p>
+<pre><code>DEBUG  运行库 MTD
+RELEASE 运行库 MT
+</code></pre></li>
+</ul>
+<ul>
+<li>预编译头<pre><code>不使用预编译头
+</code></pre></li>
+</ul>
+<ul>
+<li><p>附加依赖项</p>
+<pre><code>libssl.lib
+libthrift.lib
+libcrypto.lib
+</code></pre></li>
+<li><p>附加库目录</p>
+<pre><code>Z:\libraries\boost\boost_1_66_0\stage\lib;
+z:\libraries\openssl\OpenSSL-Win32\lib;
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\Debug-mt;
+</code></pre></li>
+</ul>
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>使用vs2017编译thrift项目时出现以下错误：objbase.h(230): error C2760错误的解决的解决办法：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#在stdafx.h中添加</div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> WIN32_LEAN_AND_MEAN</span></div></pre></td></tr></table></figure></p>
+<h2 id="openssl-编译设置"><a href="#openssl-编译设置" class="headerlink" title="openssl 编译设置"></a>openssl 编译设置</h2><ul>
+<li>动态编译<pre><code>WIN64
+perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64
+nmake clean
+nmake
+nmake test
+nmake install
+</code></pre></li>
+</ul>
+<ul>
+<li>静态编译<pre><code>makefile and configdata 两个文件中的/MD改为/MT
+perl Configure VC-WIN64A no-asm --prefix=z:\libraries\openssl\vc-64_static
+nmake clean
+nmake
+nmake test
+nmake install
+</code></pre></li>
+</ul>
+<h2 id="thrift-0-11-0编译问题及解决："><a href="#thrift-0-11-0编译问题及解决：" class="headerlink" title="thrift 0.11.0编译问题及解决："></a>thrift 0.11.0编译问题及解决：</h2><ul>
+<li>一、包含目录要加上openssl的目录引用</li>
+<li><p>二、THttpserver.cpp与THttpclient.cpp中的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//#include &lt;thrift/config.h&gt;此行改为</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thrift/thrift.h&gt;</span></span></div></pre></td></tr></table></figure>
+</li>
+<li><p>三、添加以下宏定义</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在&lt;thrift/thrift-config.h&gt;中</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> PACKAGE_VERSION  <span class="meta-string">"$&#123;PACKAGE_VERSION&#125;"</span></span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）"><a href="#thrift客户端与服务器编译设置：（release编译设置静态编译WITH-VS2017）" class="headerlink" title="thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）"></a>thrift客户端与服务器编译设置：（release编译设置静态编译WITH VS2017）</h2><ul>
+<li>c++常规–附加包含目录：<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src
+Z:\libraries\thrift\thrift-0.11.0\lib\cpp\src\thrift\windows
+Z:\libraries\boost\boost_1_66_0
+</code></pre></li>
+<li>链接器–常规–附加库目录<pre><code>Z:\libraries\thrift\thrift-0.11.0\lib\cpp\release-mt
+Z:\libraries\boost\boost_1_66_0\stage\lib141
+Z:\libraries\openssl\OpenSSL-Win32\lib
+</code></pre></li>
+<li>链接器–输入–附加依赖项<pre><code>libthrift.lib
+libssl.lib
+libcrypto.lib
+</code></pre></li>
+</ul>
+<h2 id="使用odb时自定义生成："><a href="#使用odb时自定义生成：" class="headerlink" title="使用odb时自定义生成："></a>使用odb时自定义生成：</h2><ul>
+<li><p>在项目中选中类文件如：employee.hxx  右键–属性–配置属性–常规–项类型 设置成：自定义生成工具</p>
+</li>
+<li><p>然后选中：自定义生成工具并设置如下：</p>
+<ul>
+<li>命令行：<pre><code>odb.exe --std c++11 --database sqlite --generate-query --generate-schema --table-prefix boost_ employee.hxx
+</code></pre></li>
+<li>说明：<pre><code>odb employee.hxx
+</code></pre></li>
+<li>输出：<pre><code>employee-odb.hxx
+employee-odb.ixx
+employee-odb.cxx
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="docker使用hexo"><a href="#docker使用hexo" class="headerlink" title="docker使用hexo"></a>docker使用hexo</h2><ul>
+<li>1.安装Hexo<pre><code>docker run --name hexo -it -p 8083:80 -v `pwd`: /usr/share/nginx/html/source simplyintricate/hexo
+</code></pre></li>
+<li>2.发布一篇blog<pre><code>docker exec -it hexo hexo new &quot;This is one post&quot;
+</code></pre></li>
+</ul>
+<h2 id="ODB项目设置："><a href="#ODB项目设置：" class="headerlink" title="ODB项目设置："></a>ODB项目设置：</h2><ul>
+<li>输入<pre><code>db-sqlite.lib;odb.lib
+</code></pre></li>
+<li>包含目录<pre><code>z:\libraries\orm\sqlite3\sqlite-amalgamation-3220000;
+z:\libraries\orm\odb2.4\libodb-2.4.0;
+z:\libraries\orm\odb2.4\libodb-sqlite-2.4.0;
+</code></pre></li>
+<li>库目录<pre><code>z:\libraries\orm\sqlite3\;
+</code></pre></li>
+</ul>
+<h2 id="odb备注"><a href="#odb备注" class="headerlink" title="odb备注"></a>odb备注</h2><pre><code>使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://myqzz.net/2018/03/18/thrift/" data-id="cjgybzkv100045vjxwosj37nx" class="article-share-link" data-share="baidu" data-title="thrift编译设置">Share</a>
+      
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编译thrift0-11/">编译thrift0.11</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/03/18/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          如何同步Hexo网站到github
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/09/Meteor-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">项目</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/你的第一个Meteor应用/">你的第一个Meteor应用</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译thrift0-11/">编译thrift0.11</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/西游记外传之金箍棒的故事/">西游记外传之金箍棒的故事</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/你的第一个Meteor应用/" style="font-size: 20px;">你的第一个Meteor应用</a> <a href="/tags/编译thrift0-11/" style="font-size: 10px;">编译thrift0.11</a> <a href="/tags/西游记外传之金箍棒的故事/" style="font-size: 10px;">西游记外传之金箍棒的故事</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/07/wukong-story/">金箍棒，怎会这样？</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/18/hello-world/">如何同步Hexo网站到github</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/18/thrift/">thrift编译设置</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/09/Meteor-2/">项目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/29/Meteor-1/">Meteor入门</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 小爱 <a href="http://www.miibeian.gov.cn" target="_blank">鄂ICP备16013758号-1 </a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/home" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">文档</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
