@@ -152,3 +152,45 @@ tags: 编译thrift0.11
 
 ## odb备注
 	使用编译指令#pragma db transient 把字段声明为临时的，也就是该字段不保存与数据库中。
+
+
+## Error: ENOSPC: no space left on device
+
+查看存储空间
+
+	$df -h
+
+查看i节点
+
+	$df -i
+
+看是那种情况。
+
+不幸的是我哪种都不是，后来在stackflow找到了答案。
+
+问题原因:You may have reached your quota of watches.
+
+解决办法
+
+查看目前的最大值
+
+To find your current limit, type this in your terminal:
+
+	$cat /proc/sys/fs/inotify/max_user_watches
+
+
+增加最大值
+
+Which is typically 8192 by default.
+
+To increase your limit, type this:
+
+	$sudo sysctl fs.inotify.max_user_watches=16384
+
+永久设置最大值
+
+Then restart django.
+
+To permanently set this limit, type this:
+
+	$echo 16384 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
