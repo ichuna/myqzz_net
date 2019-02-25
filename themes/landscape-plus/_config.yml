@@ -20,6 +20,14 @@ widgets:
 - recent_posts
 - links
 
+
+
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+
 # Links
 links:
   #出纳软件: http://www.ichuna.com
@@ -32,6 +40,7 @@ twitter:
 google_plus:
 fb_admins: 
 fb_app_id:
+
 
 # Duoshuo
 duoshuo_shortname: 

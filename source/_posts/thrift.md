@@ -1,7 +1,8 @@
 ---
 title: thrift编译设置
-date: 2018-03-18 18:54:59
 tags: 编译thrift0.11
+abbrlink: 31784
+date: 2018-03-18 18:54:59
 ---
 
 
